@@ -20,7 +20,7 @@ function App() {
 
   async function reviewCode() {
     try {
-      const response = await axios.post('http://localhost:5000/ai/get-review', { code })
+      const response = await axios.post('https://ai-code-reviewer-2-uuxr.onrender.com/ai/get-review', { code })
       setReview(response.data)
     } catch (error) {
       console.error("❌ Error fetching review:", error)
